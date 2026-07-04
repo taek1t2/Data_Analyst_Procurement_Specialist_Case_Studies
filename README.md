@@ -1,1 +1,2 @@
 # Data_Analyst_Procurement_Specialist_Case_Studies
+# Due to the brands' confidentiality, I built a fictional operations company called NorthGrid Infrastructure to simulate the analytical work performed by procurment and supply chain analysts. I created realistic business data and completed mutliple case studies that addressed the cost, supplier performance, inventory optimization, and logistics operations.
