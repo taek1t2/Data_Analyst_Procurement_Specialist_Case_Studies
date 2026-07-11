@@ -15,7 +15,6 @@ facility = pd.DataFrame(
 
 facility_created = facility.to_csv("facilities.csv", index=False)
 
-print(facility_created)
 
 vendors = [
     ["AIS", "Atlas Industrial Suppy", "Electrical"],
@@ -37,4 +36,24 @@ vendors_data = pd.DataFrame(
 
 vendors_created = vendors_data.to_csv("Vendors.csv", index=False)
 
-print(vendors_created)
+
+inventory_list = [
+    ["Electrical Cable", "Electrical", 540, 200],
+    ["Circuit Breaker", "Electrical", 120, 60],
+    ["HVAC Filter", "HVAC", 300, 120],
+    ["Safety Gloves", "Safety", 1100, 500],
+    ["Safety Helmet", "Safety", 280, 120],
+    ["Ethernet Switch", "Networking", 70, 20],
+    ["PVC Pipe", "Plumbing", 450, 150],
+    ["Power Drill", "Tools", 55, 15],
+    ["Cleaning Solution", "Janitorial", 800, 250],
+    ["Steel Bolts", "Hardware", 5000, 2000]
+]
+
+inventory_data = pd.DataFrame(
+    inventory_list,
+    columns=["Item", "Category", "Inventory Count", "Reorder Count"]
+)
+
+inventory_created = inventory_data.to_csv("inventory.csv", index=False)
+

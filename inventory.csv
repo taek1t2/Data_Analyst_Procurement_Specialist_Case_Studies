@@ -1,0 +1,11 @@
+Item,Category,Inventory Count,Reorder Count
+Electrical Cable,Electrical,540,200
+Circuit Breaker,Electrical,120,60
+HVAC Filter,HVAC,300,120
+Safety Gloves,Safety,1100,500
+Safety Helmet,Safety,280,120
+Ethernet Switch,Networking,70,20
+PVC Pipe,Plumbing,450,150
+Power Drill,Tools,55,15
+Cleaning Solution,Janitorial,800,250
+Steel Bolts,Hardware,5000,2000
