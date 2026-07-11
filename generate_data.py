@@ -16,3 +16,25 @@ facility = pd.DataFrame(
 facility_created = facility.to_csv("facilities.csv", index=False)
 
 print(facility_created)
+
+vendors = [
+    ["AIS", "Atlas Industrial Suppy", "Electrical"],
+    ["MHS", "Mountain HVAC Solutions", "HVAC"],
+    ["SSC", "Summit Safety Co.", "Safety"],
+    ["PP", "Precision Plumbing", "Plumbing"],
+    ["WNS", "Western Network Systems", "Networking"],
+    ["PIT", "Prime Industrial Tools", "Tools"],
+    ["BOS", "BluePeak Office Supply", "Office"],
+    ["IGM", "IronGate Mechanical", "Mechanical"],
+    ["CWS", "CleanWorks Supply", "Janitorial"],
+    ["RMF", "Rocky Mountain Fasteners", "Hardware"]
+]
+
+vendors_data = pd.DataFrame(
+    vendors,
+    columns=["Vendor ID", "Vendor Name", "Category"]
+)
+
+vendors_created = vendors_data.to_csv("Vendors.csv", index=False)
+
+print(vendors_created)
