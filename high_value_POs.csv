@@ -1,0 +1,21 @@
+PO_Number,Vendor,Facility,Category,Quantity,Unit_Cost,Total_Cost,Order_Date,Delivery_Date
+PO48,CleanWorks Supply,Albuquerque Distribution Center,Office,61,880,53680,2021-03-16,2021-04-06
+PO49,Precision Plumbing,Phoenix Distribution Center,Hardware,70,881,61670,2021-01-04,2021-01-19
+PO56,Precision Plumbing,Reno Operations Center,Networking,64,806,51584,2020-11-10,2020-11-23
+PO58,CleanWorks Supply,Albuquerque Distribution Center,Plumbing,73,859,62707,2020-10-09,2020-11-03
+PO73,BluePeak Office Supply,Phoenix Distribution Center,Networking,64,805,51520,2021-03-31,2021-04-28
+PO86,BluePeak Office Supply,Phoenix Distribution Center,Mechanical,74,824,60976,2020-07-26,2020-08-20
+PO130,Precision Plumbing,Reno Operations Center,HVAC,71,804,57084,2021-04-08,2021-04-26
+PO135,Western Network Systems,Salt Lake Service Hub,Networking,72,699,50328,2021-03-22,2021-04-07
+PO177,Precision Plumbing,Reno Operations Center,Office,74,880,65120,2021-03-30,2021-04-24
+PO183,Western Network Systems,Reno Operations Center,Electrical,74,688,50912,2020-10-18,2020-11-01
+PO184,IronGate Mechanical,Salt Lake Service Hub,HVAC,68,739,50252,2020-12-20,2021-01-19
+PO192,Summit Safety Co.,Denver Operations Center,Safety,73,831,60663,2021-05-19,2021-06-04
+PO217,Western Network Systems,Phoenix Distribution Center,Plumbing,73,890,64970,2021-02-12,2021-03-03
+PO252,IronGate Mechanical,Albuquerque Distribution Center,Plumbing,63,824,51912,2020-12-06,2020-12-27
+PO272,Rocky Mountain Fasteners,Albuquerque Distribution Center,Safety,75,871,65325,2021-02-19,2021-03-19
+PO355,Mountain HVAC Solutions,Albuquerque Distribution Center,Networking,60,899,53940,2021-04-20,2021-05-01
+PO377,Western Network Systems,Phoenix Distribution Center,Safety,65,888,57720,2020-12-06,2020-12-19
+PO464,Prime Industrial Tools,Denver Operations Center,Office,64,826,52864,2021-01-13,2021-02-08
+PO468,IronGate Mechanical,Reno Operations Center,Mechanical,65,864,56160,2021-06-12,2021-07-08
+PO480,CleanWorks Supply,Denver Operations Center,Mechanical,75,762,57150,2021-03-11,2021-04-08
