@@ -1,4 +1,6 @@
 import pandas as pd
+import random
+from datetime import datetime, timedelta
 
 facilities = [
     ["DEN01", "Denver Operations Center", "Denver", "CO"],
@@ -56,4 +58,58 @@ inventory_data = pd.DataFrame(
 )
 
 inventory_created = inventory_data.to_csv("inventory.csv", index=False)
+
+
+
+purchase_orders = []
+
+vendors = vendors_data["Vendor Name"].tolist()
+facilities = facility["Facility Name"].tolist()
+
+categories = [
+    "Electrical",
+    "HVAC",
+    "Safety",
+    "Networking",
+    "Plumbing",
+    "Office",
+    "Mechanical",
+    "Janitorial",
+    "Hardware"
+]
+
+for i in range(1, 5001):
+    order_date = datetime(2020, 7, 12) + timedelta(days=random.randint(0, 365))
+    lead_time = random.randint(5, 30)
+    delivery  = order_date + timedelta(days=lead_time)
+    quantity = random.randint(1, 75)
+    unit_price = random.randint(25,900)
+    purchase_orders.append([
+        f"PO{i:05}",
+        random.choice(vendors),
+        random.choice(facilities),
+        random.choice(categories),
+        quantity,
+        unit_price,
+        quantity * unit_price,
+        order_date.date(),
+        delivery.date()
+    ])
+
+po_df = pd.DataFrame(
+    purchase_orders,
+    columns=[
+        "PO_Number",
+        "Vendor",
+        "Facility",
+        "Category",
+        "Quantity",
+        "Unit_Cost",
+        "Total_Cost",
+        "Order_Date",
+        "Delivery_Date"
+    ]
+)
+
+po_df.to_csv("purchase_orders.csv", index=False)
 
