@@ -2,6 +2,7 @@ import pandas as pd
 import random
 from datetime import datetime, timedelta
 
+# Create a facility list
 facilities = [
     ["DEN01", "Denver Operations Center", "Denver", "CO"],
     ["PHX01", "Phoenix Distribution Center", "Phoenix", "AZ"],
@@ -18,6 +19,7 @@ facility = pd.DataFrame(
 facility_created = facility.to_csv("facilities.csv", index=False)
 
 
+# Create a vendors list
 vendors = [
     ["AIS", "Atlas Industrial Suppy", "Electrical"],
     ["MHS", "Mountain HVAC Solutions", "HVAC"],
@@ -39,6 +41,7 @@ vendors_data = pd.DataFrame(
 vendors_created = vendors_data.to_csv("Vendors.csv", index=False)
 
 
+# Create an inventory list
 inventory_list = [
     ["Electrical Cable", "Electrical", 540, 200],
     ["Circuit Breaker", "Electrical", 120, 60],
@@ -60,7 +63,7 @@ inventory_data = pd.DataFrame(
 inventory_created = inventory_data.to_csv("inventory.csv", index=False)
 
 
-
+# Create a purchase order list
 purchase_orders = []
 
 vendors = vendors_data["Vendor Name"].tolist()
@@ -78,6 +81,8 @@ categories = [
     "Hardware"
 ]
 
+
+# creating the data
 for i in range(1, 501):
     order_date = datetime(2020, 7, 12) + timedelta(days=random.randint(0, 365))
     lead_time = random.randint(5, 30)
@@ -85,7 +90,7 @@ for i in range(1, 501):
     quantity = random.randint(1, 75)
     unit_price = random.randint(25,900)
     purchase_orders.append([
-        f"PO{i:05}",
+        f"PO{i:02}",
         random.choice(vendors),
         random.choice(facilities),
         random.choice(categories),
