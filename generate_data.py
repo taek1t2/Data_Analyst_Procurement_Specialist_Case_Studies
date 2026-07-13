@@ -78,7 +78,7 @@ categories = [
     "Hardware"
 ]
 
-for i in range(1, 5001):
+for i in range(1, 501):
     order_date = datetime(2020, 7, 12) + timedelta(days=random.randint(0, 365))
     lead_time = random.randint(5, 30)
     delivery  = order_date + timedelta(days=lead_time)
