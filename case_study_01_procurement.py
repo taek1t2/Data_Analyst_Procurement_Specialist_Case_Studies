@@ -25,16 +25,12 @@ vendor_purchase_order_counts = (
 )
 
 
-
 # ==============================================
 # Which vendors received the highest procurement spend ?
 # ==============================================
 
 # Group purchase orders by vendors
-
-
 # Calculate total spend for each vendor
-
 # Sort vendors from highest to lowest spend
 vendor_spend = (
     po_df
@@ -48,4 +44,7 @@ print(f"Total purchase orders: \n{vendor_spend}")
 
 # Export the report as a CSV
 vendor_spend.to_csv("vendor_spend.csv", header=["Total_Spend"])
+
+
+
 
